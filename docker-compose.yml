@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: factorygpt_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - DEFAULT_MODEL=deepseek/deepseek-chat-v3
+      - DATABASE_URL=sqlite:///./factorygpt.db
+      - CHROMA_PERSIST_DIR=/app/vector_db
+      - UPLOADS_DIR=/app/uploads
+      - REPORTS_DIR=/app/reports
+    volumes:
+      - factorygpt_vector_db:/app/vector_db
+      - factorygpt_uploads:/app/uploads
+      - factorygpt_reports:/app/reports
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: factorygpt_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  factorygpt_vector_db:
+  factorygpt_uploads:
+  factorygpt_reports:

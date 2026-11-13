@@ -1,0 +1,26 @@
+================================================================================
+FACTORY AUTOMATION ERROR CODE REFERENCE & TROUBLESHOOTING GUIDE (REV 3.2)
+================================================================================
+
+ERROR CODE: E102
+--------------------------------------------------------------------------------
+Description: Servo Drive Overcurrent / Phase Imbalance Detected on Axis 2.
+Severity: High (Automatic Machine Trip)
+
+Possible Causes:
+1. Mechanical jam or obstruction along Axis 2 ball screw linear guide.
+2. Damaged power cable between servo amplifier and motor (Phase U/V/W short).
+3. Servo drive gain parameter mismatch or encoder signal feedback loss.
+
+Troubleshooting Steps for Error E102:
+1. Power down system main breaker and inspect Axis 2 linear guide rails for physical debris or foreign material.
+2. Manually rotate Axis 2 ball screw with hex key to ensure free mechanical movement without binding.
+3. Check resistance across servo motor power leads U-V, V-W, and U-W using a digital multimeter (Expected: 1.2 Ohms +/- 0.1 Ohm).
+4. If coil resistance shows open circuit or short to ground, replace Axis 2 Servo Motor (Part # SM-AX2-750W).
+5. If motor resistance is normal, reset servo drive module via Diagnostic Panel (Press Parameter Reset -> Key 9021).
+
+ERROR CODE: E105
+--------------------------------------------------------------------------------
+Description: Hydraulic Pressure Low (Pressure < 120 Bar).
+Causes: Low oil level in hydraulic reservoir, clogged suction filter, or pressure relief valve bypass leak.
+Solution: Inspect hydraulic pump line P-1, clean intake mesh filter, top up ISO VG 46 hydraulic oil.

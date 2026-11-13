@@ -1,0 +1,24 @@
+================================================================================
+INDUSTRIAL CNC MILLING MACHINE (MODEL: SPINDLE-PRO 5000) - OPERATING MANUAL
+================================================================================
+
+SECTION 1: OVERHEATING DIAGNOSTICS & TROUBLESHOOTING
+--------------------------------------------------------------------------------
+1.1 Causes of Spindle Overheating:
+- Continuous high-RPM operation exceeding 12,000 RPM without adequate coolant flow.
+- Clogged closed-loop coolant lines or degraded coolant fluid.
+- Contaminated spindle bearing assembly or insufficient synthetic grease lubrication.
+- Spindle motor fan failure or blocked air intake filters.
+
+1.2 Corrective Maintenance Steps for Overheating:
+1. Immediately press Emergency Stop (E-STOP) and allow spindle to cool for 20 minutes.
+2. Check coolant reservoir fluid level. Top up with Mobilcut 100 semi-synthetic coolant if level is below MIN line.
+3. Inspect coolant pump line pressure gauge (Normal reading: 4.5 to 5.2 bar).
+4. Remove spindle rear shroud filter and blow out particulate debris using compressed air (max 30 PSI).
+5. Inspect spindle bearing housing for abnormal mechanical vibration. If bearing temperature exceeds 85°C after 15 minutes of idle test, replace main spindle front bearings (Part # SP-BRG-9920).
+
+SECTION 2: DAILY SAFETY PRECAUTIONS
+--------------------------------------------------------------------------------
+- Always wear ANSI Z87.1 approved safety glasses and cut-resistant gloves during tool changes.
+- Ensure spindle enclosure guard is locked before initiating automatic tool path.
+- Keep emergency stop buttons clear of tools and debris.

@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200 min-h-screen overflow-x-hidden;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-card:hover {
+  border-color: rgba(2, 132, 199, 0.4);
+  box-shadow: 0 0 20px rgba(2, 132, 199, 0.15);
+}
+
+/* Pulse Glow Animation */
+@keyframes pulse-cyan {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(2, 132, 199, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(2, 132, 199, 0.8);
+  }
+}
+
+.animate-glow {
+  animation: pulse-cyan 3s infinite;
+}
+
+/* Markdown prose tweaks */
+.prose pre {
+  @apply bg-slate-900 border border-slate-800 rounded-xl p-4 my-3 overflow-x-auto text-cyan-300 font-mono text-sm;
+}
+
+.prose code {
+  @apply bg-slate-800 text-cyan-300 px-1.5 py-0.5 rounded text-xs font-mono;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  @apply text-slate-100 font-bold tracking-tight my-2;
+}
+
+.prose ul {
+  @apply list-disc list-inside space-y-1 my-2 text-slate-300;
+}
+
+.prose ol {
+  @apply list-decimal list-inside space-y-1 my-2 text-slate-300;
+}
+
+.prose p {
+  @apply my-1.5 leading-relaxed text-slate-300;
+}

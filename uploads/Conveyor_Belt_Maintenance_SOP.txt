@@ -1,0 +1,21 @@
+================================================================================
+STANDARD OPERATING PROCEDURE: CONVEYOR BELT MAINTENANCE & REPLACEMENT (SOP-CV-204)
+================================================================================
+
+SECTION 1: CONVEYOR BELT REPLACEMENT PROCEDURE
+--------------------------------------------------------------------------------
+1. Perform Lockout/Tagout (LOTO) on main breaker CB-104 and verify zero energy state.
+2. Loosen tensioning bolts T-1 and T-2 on tail pulley using a 24mm ratchet wrench until belt tension drops to zero.
+3. Remove side safety skirts and belt scraper assemblies on both loading and discharge zones.
+4. Unclip the vulcanized belt joint pin or cut mechanical lacing wire using heavy-duty wire cutters.
+5. Thread new heavy-duty nitrile conveyor belt (Part # CV-BLT-1200) around drive pulley, snub pulley, and tail pulley.
+6. Align belt edges using laser alignment tool (Tolerance: +/- 1.5mm across 10 meter span).
+7. Re-insert lacing pin, clamp joint with alignment fixture, and apply vulcanizing sealant patch.
+8. Retighten tensioning bolts T-1 and T-2 until belt deflection measures 12mm under a 10kg force at mid-span.
+9. Remove LOTO locks, perform 5-minute dry test run at low speed (0.5 m/s), and monitor for tracking drift.
+
+SECTION 2: SAFETY PRECAUTIONS
+--------------------------------------------------------------------------------
+- MANDATORY LOTO: Never touch or service conveyor belt components without isolating breaker CB-104.
+- Beware of pinch points around drive drum and tail pulley.
+- Do not wear loose clothing, long hair, or jewelry near moving conveyor rollers.
